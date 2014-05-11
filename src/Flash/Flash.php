@@ -13,10 +13,15 @@ class Flash
     public $default = 'info';
 
     // Array with all valid messages
-    public $valid = array('info', 'success', 'warning', 'error');
+    public $valid = ['info', 'success', 'warning', 'error'];
 
     // Array with FontAwesome icons
-    public $fa = array('info' => 'fa fa-info-circle', 'success' => 'fa fa-check', 'warning' => 'fa fa-warning', 'error' => 'fa fa-times-circle');
+    public $fa = [
+        'info' => 'fa fa-info-circle',
+        'success' => 'fa fa-check',
+        'warning' => 'fa fa-warning',
+        'error' => 'fa fa-times-circle',
+        ];
     
     function __construct()
     {
@@ -55,10 +60,10 @@ class Flash
         }
 
         // Insert flash into $_SESSION
-        $_SESSION['flash'][] = array(
+        $_SESSION['flash'][] = [
             'type' => $type,
             'msg' => $msg,
-        );
+        ];
     }
 
 
@@ -80,7 +85,7 @@ class Flash
                 $type = $flash['type'];
                 $msg = $flash['msg'];
 
-                $messages .= "<div class='flash_{$type}'>\n";
+                $messages .= "<div class='flashy_{$type}'>\n";
                 if ($style == 'icons') {
                    $messages .= "<i class='{$this->fa[$type]}'></i>\n";
                 }
