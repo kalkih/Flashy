@@ -1,6 +1,6 @@
 Flashy
 =======
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kalkih/Flashy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/kalkih/Flashy/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kalkih/Flashy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/kalkih/Flashy/?branch=master)   
 A small PHP flash class to store and get information and messages.
 
 Flashy comes with a simple and minimalistic pre-defined stylesheet.
