@@ -1,0 +1,23 @@
+{   
+    "name": "kalkih/flashy",    
+    "type": "library",
+    "description": "Small session based flash class, written mainly for Anax-MVC.",
+    "keywords": ["flash", "mvc", "anax", "kalkih", "flashy"],
+    "homepage": "http://dbwebb.se",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kalle Kihlström",
+            "email": "me@kalkih.se",
+            "homepage": "http://kalkih.se",
+            "role": "Student, Web developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": { "kalkih\\": "src/" }
+    }
+
+}
