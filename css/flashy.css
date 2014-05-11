@@ -1,0 +1,25 @@
+.flashy_info, .flashy_success, .flashy_warning, .flashy_error {
+margin: 10px 0px;
+padding: 8px;
+}
+.flashy_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.flashy_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.flashy_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.flashy_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.flashy_info i, .flashy_success i, .flashy_warning i, .flashy_error i {
+    margin: 10px 20px;
+    font-size: 2em;
+    vertical-align: middle;
+}
