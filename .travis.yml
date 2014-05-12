@@ -2,14 +2,13 @@ language: php
 php:
     - 5.5
     - 5.4
-    - hhvm
-
-
-before_script:
-    - wget https://scrutinizer-ci.com/ocular.phar
 
 script:
-    - phpunit test/Flash/FlashTest.php --coverage-clover coverage.clover test
+    #- phpunit test/Flash/FlashTest.php --coverage-clover coverage.clover test
+    - phpunit --coverage-clover=coverage.clover
+    - phpunit test/Flash/FlashTest.php test
+
 
 after_script:
+    - wget https://scrutinizer-ci.com/ocular.phar
     - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
