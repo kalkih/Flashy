@@ -1,7 +1,6 @@
 Flashy
 =======
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kalkih/Flashy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/kalkih/Flashy/?branch=master)   
-[![Build Status](https://travis-ci.org/kalkih/Flashy.svg?branch=master)](https://travis-ci.org/kalkih/Flashy)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kalkih/Flashy/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/kalkih/Flashy/?branch=master)	[![Build Status](https://travis-ci.org/kalkih/Flashy.svg?branch=master)](https://travis-ci.org/kalkih/Flashy)
 
 A small PHP flash class to store and get information and messages.
 
