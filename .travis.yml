@@ -1,7 +1,13 @@
 language: php
 php:
-  - 5.5
-  - 5.4
-script: 
-  - mkdir -p build/logs
-  - phpunit test/Flash/FlashTest.php --coverage-clover build/logs/clover.xml test
+    - 5.5
+    - 5.4
+
+before_script:
+    - wget https://scrutinizer-ci.com/ocular.phar
+
+script:
+    - phpunit test/Flash/FlashTest.php --coverage-clover coverage.clover test
+
+after_script:
+    - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
