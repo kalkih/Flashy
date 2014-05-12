@@ -1,0 +1,8 @@
+imports:
+    - php
+
+filter:
+    excluded_paths: [test/*, css/*]
+
+tools:
+    external_code_coverage: true
