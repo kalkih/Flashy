@@ -4,10 +4,7 @@ php:
     - 5.4
 
 script:
-    #- phpunit test/Flash/FlashTest.php --coverage-clover coverage.clover test
-    - phpunit --coverage-clover=coverage.clover
-    - phpunit test/Flash/FlashTest.php test
-
+    - phpunit test/Flash/FlashTest.php --coverage-clover coverage.clover test
 
 after_script:
     - wget https://scrutinizer-ci.com/ocular.phar
