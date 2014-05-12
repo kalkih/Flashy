@@ -41,7 +41,7 @@ class Flash
      */
     public function clear()
     {
-        unset($_SESSION['flash']);
+        $_SESSION['flash'] = null;
     }
 
 
