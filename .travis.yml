@@ -3,6 +3,9 @@ php:
     - 5.5
     - 5.4
 
+script: 
+    - phpunit test/Flash/FlashTest.php test
+
 before_script:
     - wget https://scrutinizer-ci.com/ocular.phar
 
