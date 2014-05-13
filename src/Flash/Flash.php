@@ -93,7 +93,7 @@ class Flash
             }
             
             // Clear old messages
-            $if (!$messages = null) {
+            if ($messages != null) {
                 $this->clear();
             }
             
@@ -101,6 +101,5 @@ class Flash
 
         return $messages;
     }
-
 
 }
