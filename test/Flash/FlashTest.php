@@ -38,6 +38,31 @@ class FlashTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Error message', $_SESSION['flash'][3]['msg']);
     }
 
+    public function testGet()
+    {
+        $this->flash->add('info', 'Info message');
+
+        $output = $this->flash->get();
+
+        $expected = "<div class='flashy_info'>\n";
+        $expected .= "\t" . 'Info message' . "\n</div>\n";
+
+        $this->assertEquals($expected, $output);
+    }
+
+    public function testGetWithIcon()
+    {
+        $this->flash->add('info', 'Info message');
+
+        $output = $this->flash->get('icons');
+
+        $expected = "<div class='flashy_info'>\n";
+        $expected .= "\t<i class='fa fa-info-circle'></i>\n";
+        $expected .= "\t" . 'Info message' . "\n</div>\n";
+
+        $this->assertEquals($expected, $output);
+    }
+
     public function testGetEmptyMessages() 
     {
         $output = $this->flash->get();
