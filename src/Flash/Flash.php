@@ -93,9 +93,7 @@ class Flash
             }
             
             // Clear old messages
-            if ($messages != null) {
-                $this->clear();
-            }
+            $_SESSION['flash'] = null;
             
         }
 
