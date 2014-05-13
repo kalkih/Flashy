@@ -87,13 +87,16 @@ class Flash
 
                 $messages .= "<div class='flashy_{$type}'>\n";
                 if ($style == 'icons') {
-                   $messages .= "<i class='{$this->fa[$type]}'></i>\n";
+                   $messages .= "\t<i class='{$this->fa[$type]}'></i>\n";
                 }
-                $messages .= $msg . "\n</div>";
+                $messages .= "\t" . $msg . "\n</div>\n";
             }
             
             // Clear old messages
-            $this->clear();
+            $if (!$messages = null) {
+                $this->clear();
+            }
+            
         }
 
         return $messages;
