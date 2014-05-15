@@ -29,8 +29,6 @@ class Flash
         if (!isset($_SESSION['flash'])) 
         {
             $_SESSION['flash'] = array();
-        } else {
-            $_SESSION['flash'] = $_SESSION['flash'];
         }
     }
 
